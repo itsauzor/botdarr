@@ -87,6 +87,7 @@ public class ApiRequests {
     return false;
   }
 
+	
   public void auditRequest(ApiRequestType apiRequestType, String username, String title) {
     try (Connection conn = DriverManager.getConnection(databaseHelper.getJdbcUrl())) {
       PreparedStatement preparedStatement = conn.prepareStatement("insert into user_requests (user, title, dt, request_type) values (?, ?, ?, ?)");
