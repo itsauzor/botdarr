@@ -7,6 +7,7 @@ import net.dv8tion.jda.api.interactions.components.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class DiscordResponse implements ChatClientResponse {
   public DiscordResponse(MessageEmbed message) {
     this.message = message;
