@@ -63,9 +63,7 @@ public abstract class ChatClientBootstrap {
     scheduler.initCleanup(chatClient);
   }
 
-  protected <T extends ChatClientResponse> void runAndProcessCommands(String prefix,
-                                                                      String message,
-                                                                      String username,
+  protected <T extends ChatClientResponse> void runAndProcessCommands(String prefix, String message, String username,
                                                                       ChatClientResponseBuilder<T> responseBuilder,
                                                                       ChatSender<T> chatSender) {
     try {
