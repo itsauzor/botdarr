@@ -27,6 +27,7 @@ public class ApiRequests {
     return 20;
   }
 
+	
   public int getMaxResultsToShow() {
     String maxResultsToShow = Config.getProperty(Config.Constants.MAX_RESULTS_TO_SHOW);
     if (!Strings.isEmpty(maxResultsToShow)) {
